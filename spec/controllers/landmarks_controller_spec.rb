@@ -83,7 +83,6 @@ describe LandmarksController do
      Title.create(:name => "Mayor")
       visit "/figures/new"
       expect(page).to have_css("input[type=\"checkbox\"]")
-      expect(page).to have_content('Mayor')
-      
+      expect(page).to have_content('Mayor')      
   end
 end
